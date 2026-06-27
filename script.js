@@ -1,24 +1,45 @@
-window.addEventListener("scroll",()=>{
+const text =
+"Software Engineer | Azure Certified | Cloud & Data Engineering Enthusiast";
 
-let cards=document.querySelectorAll(".skill-card,.project-card");
+let index = 0;
 
-cards.forEach(card=>{
+function typeEffect() {
 
-let position=card.getBoundingClientRect().top;
+if(index < text.length){
 
-let screen=window.innerHeight;
+document.querySelector(".typing").innerHTML += text.charAt(index);
 
-if(position < screen - 100){
-card.style.opacity="1";
-card.style.transform="translateY(0)";
+index++;
+
+setTimeout(typeEffect, 70);
+}
+
+}
+
+typeEffect();
+
+const cards = document.querySelectorAll(
+".skill-card, .project-card"
+);
+
+window.addEventListener("scroll", () => {
+
+cards.forEach(card => {
+
+const position = card.getBoundingClientRect().top;
+
+if(position < window.innerHeight - 100){
+
+card.style.opacity = "1";
+card.style.transform = "translateY(0)";
 }
 
 });
 
 });
 
-document.querySelectorAll(".skill-card,.project-card").forEach(card=>{
-card.style.opacity="0";
-card.style.transform="translateY(40px)";
-card.style.transition="all 0.8s";
+cards.forEach(card => {
+card.style.opacity = "0";
+card.style.transform = "translateY(40px)";
+card.style.transition = "0.8s";
 });
