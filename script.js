@@ -1,3 +1,12 @@
+// Loader
+window.onload = function () {
+  document.getElementById("loader").style.display = "none";
+};
+
+// Back to top
+function scrollTopBtn() {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}
 const text =
 "Software Engineer | Azure Certified | Cloud & Data Engineering Enthusiast";
 
