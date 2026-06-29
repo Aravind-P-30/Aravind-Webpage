@@ -214,10 +214,56 @@ color:#00e5ff;
 font-size:50px;
 }
 
-footer{
-text-align:center;
-padding:30px;
-background:#020617;
+footer {
+  background: linear-gradient(135deg, #0a192f, #020c1b);
+  color: white;
+  text-align: center;
+  padding: 50px;
+}
+
+/* Availability Highlight */
+.availability {
+  color: #00ff99;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Contact Section */
+.contact {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #ccc;
+}
+
+/* Social Icons */
+.social {
+  margin-top: 25px;
+}
+
+.social a {
+  display: inline-flex;
+  width: 55px;
+  height: 55px;
+  background: #0e8e41;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  margin: 0 6px;
+  color: white;
+  font-size: 22px;
+  text-decoration: none;
+  transition: 0.4s;
+}
+
+.social a:hover {
+  background: gold;
+  color: black;
+  transform: translateY(-8px);
+}
+
+/* Footer bottom */
+footer p {
+  margin-top: 20px;
 }
 
 @media(max-width:768px){
