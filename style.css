@@ -240,17 +240,18 @@ footer {
   margin-top: 25px;
 }
 
+
 .social a {
   display: inline-flex;
-  width: 55px;
-  height: 55px;
+  width: 65px;        /* increased from 55px */
+  height: 65px;       /* increased from 55px */
   background: #0e8e41;
   border-radius: 50%;
   justify-content: center;
   align-items: center;
-  margin: 0 6px;
+  margin: 0 8px;
   color: white;
-  font-size: 22px;
+  font-size: 28px;    
   text-decoration: none;
   transition: 0.4s;
 }
@@ -258,8 +259,9 @@ footer {
 .social a:hover {
   background: gold;
   color: black;
-  transform: translateY(-8px);
+  transform: translateY(-8px) scale(1.1); 
 }
+
 
 /* Footer bottom */
 footer p {
